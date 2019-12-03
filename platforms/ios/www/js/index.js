@@ -28,6 +28,14 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        document.getElementById("cameraTakePicture").addEventListener("click", cameraTakePicture);
+        document.getElementById("setLocalStorage").addEventListener("click", setLocalStorage);
+        document.getElementById("showLocalStorage").addEventListener("click", showLocalStorage);
+        document.getElementById("removeProjectFromLocalStorage").addEventListener("click", removeProjectFromLocalStorage);
+        document.getElementById("getLocalStorageByKey").addEventListener("click", getLocalStorageByKey);
+        var localStorage = window.localStorage;
+        document.addEventListener("volumeupbutton", callbackFunction, false);
+        document.addEventListener("backbutton", onBackKeyDown, false);
     },
 
     // Update DOM on a Received Event
@@ -44,3 +52,43 @@ var app = {
 };
 
 app.initialize();
+
+function cameraTakePicture() {
+   navigator.camera.getPicture(onSuccess, onFail, {
+      quality: 50,
+      destinationType: Camera.DestinationType.DATA_URL
+   });
+
+   function onSuccess(imageData) {
+      var image = document.getElementById('myImage');
+      image.src = "data:image/jpeg;base64," + imageData;
+   }
+
+   function onFail(message) {
+      alert('Failed because: ' + message);
+   }
+}
+
+function setLocalStorage() {
+   localStorage.setItem("Name", "John");
+   localStorage.setItem("Job", "Developer");
+   localStorage.setItem("Project", "Cordova Project");
+}
+function showLocalStorage() {
+   console.log(localStorage.getItem("Name"));
+   console.log(localStorage.getItem("Job"));
+   console.log(localStorage.getItem("Project"));
+}
+function removeProjectFromLocalStorage() {
+   localStorage.removeItem("Project");
+}
+function getLocalStorageByKey() {
+   console.log(localStorage.key(0));
+}
+function callbackFunction() {
+   alert('Volume Up Button is pressed!');
+}
+function onBackKeyDown(e) {
+   e.preventDefault();
+   alert('Back Button is Pressed!');
+} 
