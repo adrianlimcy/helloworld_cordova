@@ -125,7 +125,7 @@ function createContact() {
       alert('Failed because: ' + message);
    }
 }
-function findContacts() {
+function findContact() {
    var options = new ContactFindOptions();
    options.filter = "";
    options.multiple = true;
