@@ -46,6 +46,8 @@ var app = {
         document.getElementById("createContact").addEventListener("click", createContact);
         document.getElementById("findContact").addEventListener("click", findContact);
         document.getElementById("deleteContact").addEventListener("click", deleteContact);
+        // find device information
+        document.getElementById("cordovaDevice").addEventListener("click", cordovaDevice);
     },
 
     // Update DOM on a Received Event
@@ -159,4 +161,11 @@ function deleteContact() {
    function contactfindError(message) {
       alert('Failed because: ' + message);
    }
+}
+function cordovaDevice() {
+   alert("Cordova version: " + device.cordova + "\n" +
+      "Device model: " + device.model + "\n" +
+      "Device platform: " + device.platform + "\n" +
+      "Device UUID: " + device.uuid + "\n" +
+      "Device version: " + device.version);
 }

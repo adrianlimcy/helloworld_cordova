@@ -10,3 +10,11 @@ cordova plugin add cordova-plugin-battery-status
 
 How to use the Camera Plugin
 https://www.tutorialspoint.com/cordova/cordova_camera.htm
+
+How to use Contact plugin
+https://www.tutorialspoint.com/cordova/cordova_contacts.htm
+typo in example code
+findContact instead of findContacts
+
+How to find device information, device plugin
+https://www.tutorialspoint.com/cordova/cordova_device.htm
