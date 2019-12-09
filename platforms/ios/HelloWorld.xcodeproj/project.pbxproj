@@ -25,6 +25,8 @@
 		C838989AB6DF4195944805E9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A634EA7C864AD186BBA1B2 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		81C33D6F89964349BF88B870 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7340504A51704D9DAC368E26 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E19F5306CB0049FE958A48FE /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B03F3AA81C6348F18215E660 /* CDVDevice.m */; };
+		0839DE91F0B044D38539E3E4 /* CDVAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 828671D168284B2E888BD739 /* CDVAccelerometer.m */; };
+		66D236D70C5646AE945A8AE9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086CAEB677F949808BA4FF47 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,9 @@
 		7340504A51704D9DAC368E26 /* AddressBookUI.framework */ = {isa = PBXFileReference; name = "AddressBookUI.framework"; path = "System/Library/Frameworks/AddressBookUI.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		B03F3AA81C6348F18215E660 /* CDVDevice.m */ = {isa = PBXFileReference; name = "CDVDevice.m"; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		B265DD62673A4DFDABEF18E1 /* CDVDevice.h */ = {isa = PBXFileReference; name = "CDVDevice.h"; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		828671D168284B2E888BD739 /* CDVAccelerometer.m */ = {isa = PBXFileReference; name = "CDVAccelerometer.m"; path = "cordova-plugin-device-motion/CDVAccelerometer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		02542FE2B2B14C1AB55801FF /* CDVAccelerometer.h */ = {isa = PBXFileReference; name = "CDVAccelerometer.h"; path = "cordova-plugin-device-motion/CDVAccelerometer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		086CAEB677F949808BA4FF47 /* CoreMotion.framework */ = {isa = PBXFileReference; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,7 @@
 				07CD83A3E34340C4AFC9F517 /* AVFoundation.framework in Frameworks */,
 				C838989AB6DF4195944805E9 /* AddressBook.framework in Frameworks */,
 				81C33D6F89964349BF88B870 /* AddressBookUI.framework in Frameworks */,
+				66D236D70C5646AE945A8AE9 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +186,7 @@
 				623BF2FFAA2C447CA6D6760D /* AVFoundation.framework */,
 				42A634EA7C864AD186BBA1B2 /* AddressBook.framework */,
 				7340504A51704D9DAC368E26 /* AddressBookUI.framework */,
+				086CAEB677F949808BA4FF47 /* CoreMotion.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,6 +228,8 @@
 				88D655A1FA9444D29DF88B77 /* CDVContact.h */,
 				B03F3AA81C6348F18215E660 /* CDVDevice.m */,
 				B265DD62673A4DFDABEF18E1 /* CDVDevice.h */,
+				828671D168284B2E888BD739 /* CDVAccelerometer.m */,
+				02542FE2B2B14C1AB55801FF /* CDVAccelerometer.h */,
 			);
 			name = Plugins;
 			path = "HelloWorld/Plugins";
@@ -352,6 +361,7 @@
 				E22A3098D7534583BD0DDD02 /* CDVContacts.m in Sources */,
 				5F6820D4DB1E4B2E9E58B7A6 /* CDVContact.m in Sources */,
 				E19F5306CB0049FE958A48FE /* CDVDevice.m in Sources */,
+				0839DE91F0B044D38539E3E4 /* CDVAccelerometer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

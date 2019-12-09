@@ -18,3 +18,6 @@ findContact instead of findContacts
 
 How to find device information, device plugin
 https://www.tutorialspoint.com/cordova/cordova_device.htm
+
+Let's try firebase (not yet done)
+https://github.com/arnesson/cordova-plugin-firebase

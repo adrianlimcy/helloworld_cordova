@@ -16,6 +16,9 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
     <name>Cordova Tutorials</name>
     <description>
         A sample Apache Cordova application from https://www.tutorialspoint.com/cordova/.
